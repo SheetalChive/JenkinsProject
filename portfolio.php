@@ -8,15 +8,7 @@
 </head>
 <body>
 
-<nav class="navbar">
-    <div class="logo">Sheetal's Project</div>
-    <div class="nav-links">
-        <a href="index.php">Home</a>
-        <a href="about.php">About</a>
-        <a href="portfolio.php">Portfolio</a>
-        <a href="contact.php">Contact</a>
-    </div>
-</nav>
+<?php include 'navbar.php'; ?>
 
 <section class="portfolio">
     <h1>My Portfolio</h1>
