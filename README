@@ -1,0 +1,58 @@
+Full DevOps Flow (Local → GitHub → Jenkins → Docker → Deploy)
+
+Step 1 : 2 AWS servers:
+
+  Server 1 → Jenkins Master - install java,jenkins
+  Server 2 → Jenkins Agent (Node)
+
+Step 2: Jenkins Agent Setup
+  sudo apt update
+  sudo apt install openjdk-17-jdk -y
+
+  sudo apt update
+  sudo apt install docker.io -y
+  sudo usermod -aG docker ubuntu
+
+Step 3 : Manage Jenkins → Nodes → New Node
+
+ Node name: agent-1
+ Remote root dir: /home/ubuntu
+ Launch method: Launch agent via SSH
+ Host: agent AWS IP
+ Credentials: Ubuntu key
+ *hit command $cd ~/.ssh in master server
+  copy private key and paste in agent server authorised key folder
+   - $cd ~/.ssh
+   - vim authorisedkey
+   - paste in this file 
+   - * copy public key from master server and paste it in jenkins node
+
+Step 4: create docker file
+
+step 5: Jenkins → New Item → Pipeline
+
+pipeline {
+    agent { label 'agent-1' }
+
+    stages {
+        stage('Pull Code') {
+            steps {
+                git branch: 'main', url: 'https://github.com/<username>/<repo>.git'
+            }
+        }
+
+        stage('Build Docker Image') {
+            steps {
+                sh 'docker build -t myapp:latest .'
+            }
+        }
+
+        stage('Run Container') {
+            steps {
+                sh 'docker stop myapp || true'
+                sh 'docker rm myapp || true'
+                sh 'docker run -d -p 8080:80 --name myapp myapp:latest'
+            }
+        }
+    }
+}
