@@ -11,9 +11,10 @@
 <?php include 'navbar.php'; ?>
 
 <section class="about">
-    <h1>About Us....!</h1>
+    <h1>About Us!</h1>
     <p>This project demonstrates modern DevOps practices: CI/CD with Jenkins, Docker deployment, and responsive web design.</p>
     <p>Created by Sheetal Chive to showcase skills in AWS, Docker, Jenkins, and PHP development!!!!!!!!.</p>
+        <a href="resume.html" target="_blank">My Portfolio</a>
 </section>
 
 <footer>

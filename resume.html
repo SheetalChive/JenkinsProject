@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Muthu | DevOps Engineer</title>
+    <link rel="stylesheet" href="style1.css" />
+</head>
+
+<body>
+    <aside>
+        <div align="center" class="profile"> <img src="photo.jpg" alt="Muthu" /> </div>
+        <h2>Sheetal Chive</h2>
+        <p>DevOps & Cloud Engineer</p> <!-- Hamburger toggle for mobile --> <button class="menu-toggle">&#9776;</button>
+        <!-- Responsive nav -->
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </aside>
+    <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p> Cloud and DevOps Engineer with 3+ years of experience in backend development using PHP, Laravel, and
+                Drupal. Recently transitioned into AWS DevOps with hands-on experience in deploying scalable
+                infrastructure using EC2, Load Balancer, and RDS. Skilled in CI/CD, Docker, Git, and cloud-native
+                services. Adept at combining development and operations expertise to streamline workflows and improve
+                deployment efficiency. </p>
+        </section>
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>AWS</li>
+                <li>Terraform</li>
+                <li>Docker</li>
+                <li>Jenkins</li>
+                <li>Linux</li>
+                <li>Git</li>
+            </ul>
+        </section>
+        <section id="projects">
+            <h2>Projects</h2>
+            <article>
+                <h3>AWS 3-Tier Architecture</h3>
+                <p>Designed and deployed a 3-tier architecture using AWS with a web tier (EC2), app tier, and database
+                    tier (RDS)</p>
+                <p>Configured Application Load Balancer to route traffic to EC2 instances across availability zones.
+                </p> <button id="buttons" onclick="openPDF()">Open PDF</button>
+            </article>
+            <!-- <article> <h3>CI/CD Pipeline Setup</h3> <p>Created Jenkins pipeline for automated build and deployment of containerized apps.</p> <button id="buttons" onclick="openPDF()">Open PDF</button> </article> -->
+            <article>
+                <h3>GE Vernova</h3>
+                <p> - Managed and monitored AWS infrastructure including EC2, RDS, S3, and Load Balancers to ensure high
+                    &nbsp; availability and scalability.<br> - Designed and implemented CI/CD pipelines using GitHub
+                    Actions for seamless deployment across dev, staging, and production environments.<br> - Maintained
+                    version control practices using Git and branch strategies for collaborative development.<br> -
+                    Designed and deployed a 3-tier architecture using AWS with a web tier (EC2), app tier, and database
+                    tier (RDS).<br> - Configured Application Load Balancer to route traffic to EC2 instances across
+                    availability zones.<br> - Implemented secure VPC with public/private subnets and NAT Gateway<br>
+                </p>
+            </article>
+        </section>
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: sheetalchive13@gmail.com</p>
+            <p>GitHub: <a href="#">https://github.com/sheetalchive</a></p>
+            <p>LinkedIn: <a href="#">https://www.linkedin.com/in/sheetal-chive-7b2a7016a/</a></p>
+        </section>
+        <section id="contact">
+            <h2></h2> <button id="buttons" onclick="openCV()">Download Resume</button>
+        </section>
+    </main>
+    <script> function openPDF() { window.open('3_tier_structure_with_RDS_and_autoscalling.pdf', '_blank'); } function openCV() { window.open('SheetalChiveResume.pdf', '_blank'); } // Toggle nav for mobile const toggleBtn = document.querySelector('.menu-toggle'); const navMenu = document.querySelector('.nav-menu'); toggleBtn.addEventListener('click', () => { navMenu.classList.toggle('active'); }); </script>
+</body>
+
+</html>

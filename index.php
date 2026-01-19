@@ -14,7 +14,7 @@
 <section class="hero">
     <h1>Welcome to My DevOps Project 💻✨</h1>
     <p>GitHub → Jenkins → Docker → AWS</p>
-    <button class="btn" onclick="alert('Hello Sheetal! Your DevOps pipeline is working 😊');">
+    <button class="btn" onclick="window.location.href='resume.html'">
         Click Me
     </button>
 </section>

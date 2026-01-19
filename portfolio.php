@@ -15,26 +15,25 @@
     <div class="portfolio-grid">
 
         <div class="project-card">
-            <img src="images/project1.jpg" alt="Project 1">
+            <!-- <img src="images/project1.jpg" alt="Project 1"> -->
             <h3>Jenkins CI/CD Pipeline</h3>
             <p>Automated Docker deployment using Jenkins & AWS.</p>
-            <a href="https://github.com/SheetalChive" target="_blank">View on GitHub</a>
+            <a href="jenkins+aws+docker+git.docx" target="_blank">View Document</a>
         </div>
 
         <div class="project-card">
-            <img src="images/project2.jpg" alt="Project 2">
+            <!-- <img src="images/project2.jpg" alt="Project 2"> -->
             <h3>PHP Responsive Website</h3>
             <p>Multi-page responsive website using PHP & CSS.</p>
             <a href="https://github.com/SheetalChive" target="_blank">View on GitHub</a>
         </div>
 
         <div class="project-card">
-            <img src="images/project3.jpg" alt="Project 3">
+            <!-- <img src="images/project3.jpg" alt="Project 3"> -->
             <h3>Docker Web App</h3>
             <p>Containerized application deployed on AWS EC2.</p>
             <a href="https://github.com/SheetalChive" target="_blank">View on GitHub</a>
         </div>
-
     </div>
 </section>
 
